@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/middle_margin">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_playlist"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/imagelist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@mipmap/ic_launcher" />
+
+            <View
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:background="@color/black_transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_playlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/middle_margin"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="@string/playlist"
+                android:textColor="@color/white"
+                android:textSize="@dimen/little_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_namePlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/little_margin"
+        android:layout_marginTop="@dimen/little_margin"
+        android:fontFamily="@font/fjalla_one"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/middle_size"
+        app:layout_constraintStart_toEndOf="@id/cv_playlist"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="BLA BLA" />
+
+    <TextView
+        android:id="@+id/tv_countVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/little_margin"
+        android:fontFamily="@font/noto_sans"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/little_size"
+        app:layout_constraintStart_toEndOf="@id/cv_playlist"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namePlaylist"
+        tools:text="32 videos series" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
