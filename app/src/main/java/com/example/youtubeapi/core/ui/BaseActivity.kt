@@ -1,8 +1,9 @@
-package com.example.youtubeapi.base
+package com.example.youtubeapi.core.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.LiveData
 import androidx.viewbinding.ViewBinding
 
 abstract class BaseActivity<VM : BaseViewModel, VB : ViewBinding> : AppCompatActivity() {
@@ -19,11 +20,8 @@ abstract class BaseActivity<VM : BaseViewModel, VB : ViewBinding> : AppCompatAct
         initView()
         initViewModel()
         initListener()
-        checkInet()
     }
-
     open fun initView() {}
     open fun initViewModel() {}
     open fun initListener() {}
-    open fun checkInet(){}
 }

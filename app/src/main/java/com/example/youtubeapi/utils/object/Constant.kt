@@ -1,4 +1,4 @@
-package com.example.youtubeapi.`object`
+package com.example.youtubeapi.utils.`object`
 
 object Constant {
 

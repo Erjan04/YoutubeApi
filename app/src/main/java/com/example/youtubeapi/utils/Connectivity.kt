@@ -1,17 +1,15 @@
-package com.example.youtubeapi.ui.playlists
+package com.example.youtubeapi.utils
+
+import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.net.ConnectivityManager
-import android.net.Network
-import android.net.NetworkCapabilities
-import android.net.NetworkRequest
+import android.net.*
 import android.os.Build
 import android.os.Build.VERSION_CODES.N
 import androidx.lifecycle.LiveData
-import android.net.NetworkInfo as NetworkInfo
 
 @Suppress("DEPRECATION")
 class Connectivity(private val context: Context): LiveData<Boolean>() {
@@ -20,6 +18,7 @@ class Connectivity(private val context: Context): LiveData<Boolean>() {
 
     private lateinit var checkCallback: ConnectivityManager.NetworkCallback
 
+    @SuppressLint("ObsoleteSdkInt")
     override fun onActive() {
         super.onActive()
         update()

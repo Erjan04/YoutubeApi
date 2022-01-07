@@ -10,7 +10,7 @@ import com.example.youtubeapi.extensions.glide
 import com.example.youtubeapi.models.Items
 import com.example.youtubeapi.models.PlayList
 
-class PlaylistAdapter(private val list: PlayList) :
+class PlaylistAdapter(private val list: MutableList<Items>) :
     RecyclerView.Adapter<PlaylistAdapter.ViewHolder>() {
     private lateinit var onClick: OnClick
 
@@ -21,10 +21,10 @@ class PlaylistAdapter(private val list: PlayList) :
     }
 
     override fun onBindViewHolder(holder: PlaylistAdapter.ViewHolder, position: Int) {
-        holder.bind(list.items[position])
+        holder.bind(list[position])
     }
 
-    override fun getItemCount() = list.items.size
+    override fun getItemCount() = list.size
 
     fun setOnClick(onClick: OnClick) {
         this.onClick = onClick

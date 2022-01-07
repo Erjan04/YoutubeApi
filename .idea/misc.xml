@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/drawable/corner.xml" value="0.21296296296296297" />
         <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/drawable/iv_corner.xml" value="0.25390625" />
         <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/layout/activity_player2.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/layout/activity_playlist.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/layout/activity_video.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/layout/connection_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/layout/item_playlist.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/YoutubeApi/app/src/main/res/layout/item_video.xml" value="0.28527131782945736" />
       </map>
     </option>
   </component>
